@@ -1,3 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        jcenter()
+        maven {
+            name "JCenter Gradle Plugins"
+            url "https://dl.bintray.com/gradle/gradle-plugins"
+        }
+    }
+
+    plugins {
+        id 'com.tngtech.jgiven.gradle-plugin' version '0.18.2'
+        id 'com.gradle.build-scan' version '3.0'
+    }
+}
+
 rootProject.name = 'jgiven'
 
 include ':jgiven-core',
