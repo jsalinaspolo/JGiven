@@ -44,7 +44,9 @@ include ':jgiven-core',
         ':jgiven-java8-tests',
         ':jgiven-junit5',
         ':jgiven-spring-junit5',
-        ':jgiven-gradle-plugin'
+        ':jgiven-gradle-plugin',
+        ":jgiven-kotest"
+
 
 def timingEnabled = System.getenv("JGivenTiming")
 
